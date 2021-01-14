@@ -1,38 +1,66 @@
-.App {
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  float: right;
   text-align: center;
 }
+.sidebar {
+  height: 100%;
+  width: 10%;
+  background-color: #c2bdbd;
+  float: left;
+  display: inline;
+}
+.fullcontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.viewOne{
+ background-color: green;
+ width: 100%;
+ height: 100%;
+}
+.viewTwo{
+ background-color: greenyellow;
+ width: 100%;
+ height: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.home{
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  font-size: 28px;
+}
+.subtitle{
+  font-size: 20px;
+}
+.subsubtitle{
+  font-size: 12px;
+}
+.subsubsubtitle{
+  font-size: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .title { font-size: 48px; }
+  .subtitle{ font-size: 40px;}
+  .subsubtitle{ font-size: 32px;}
+  .subsubsubtitle{ font-size: 24px;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+.scroll{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 90%; 
+  overflow: auto; 
 }
