@@ -32,10 +32,20 @@ it("check text on page in ViewOne Component", async () => {
   const { getByText } = render(<ViewOne />);
   expect( getByText("Responsive card deck example")).toBeInTheDocument();
 });
+
 it("check text on page in ViewTwo Component", () => {
   const { getByText } = render(<ViewTwo text="This is the magnificent ViewTwo" />);
   expect(getByText("This is the magnificent ViewTwo")).toBeInTheDocument();
 });
 
+it("check element on page in ViewOne Component", async () => {
+  const { getByTestId } = render(<ViewOne />);
+  expect( getByTestId("cardtest")).toBeInTheDocument();
+});
+it("check existence of instance of element with depicted text from array of duplicates on page in ViewOne Component", async () => {
+  const { getAllByText } = render(<ViewOne />);
+ var instance = getAllByText("Card title")[0]
+  expect( instance).toBeInTheDocument();
+});
 
 

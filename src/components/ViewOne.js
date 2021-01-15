@@ -10,7 +10,7 @@ export default class ViewOne extends React.Component {
         <h2>Responsive card deck example</h2>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
           <div className="col mb-4 col-xl-3 col-lg-4 col-md-6 col-sm-12">
-            <div className="card">
+            <div className="card" data-testid="cardtest">
               <img
                 src="https://dummyimage.com/600x400/000/fff.jpg"
                 className="card-img-top"
