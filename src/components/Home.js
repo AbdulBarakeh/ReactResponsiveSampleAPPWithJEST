@@ -26,12 +26,12 @@ export default class Home extends React.Component {
 
             <Container className="p-5 ">
                 <Jumbotron  >
-                <p className="title">Welcome to this React SPA</p>
+                <p className="title" >Welcome to this React SPA</p>
                   <p className="subtitle">This is a test sample of routing</p>
                   <p className="subsubtitle">Look at this counter</p>
                   <p className="subsubsubtitle">count: {this.state.count}</p>
 
-                  <Button
+                  <Button 
                     className="col-lg-6 col-sm-12 col-md-12"
                     onClick={this.Increment}
                   >
