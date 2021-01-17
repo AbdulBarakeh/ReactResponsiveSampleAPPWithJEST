@@ -48,4 +48,14 @@ it("check existence of instance of element with depicted text from array of dupl
   expect( instance).toBeInTheDocument();
 });
 
+//Test State
+it("should update state on click", () => {
+  const incrementCounter = jest.fn();
+  const wrapper = mount(<Home onClick={incrementCounter} />);
+  const handleClick = jest.spyOn(React, "useState");
+  handleClick.mockImplementation(size => [size, incrementCounter]);
+
+  wrapper.find("#inc").simulate("click");
+  expect(incrementCounter).toBeTruthy();
+});
 

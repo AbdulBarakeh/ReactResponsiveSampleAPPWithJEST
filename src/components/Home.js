@@ -31,13 +31,13 @@ export default class Home extends React.Component {
                   <p className="subsubtitle">Look at this counter</p>
                   <p className="subsubsubtitle">count: {this.state.count}</p>
 
-                  <Button 
+                  <Button id="inc"
                     className="col-lg-6 col-sm-12 col-md-12"
                     onClick={this.Increment}
                   >
                     Increment
                   </Button>
-                  <Button
+                  <Button id="dec"
                     className="col-lg-6 col-sm-12 col-md-12"
                     onClick={this.Decrement}
                   >
