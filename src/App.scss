@@ -1,11 +1,17 @@
+$epicColor:green;
+$epicColorTwo:greenYellow;
+
+.size{
+  width: 100%;
+  height: 100%;
+}
 .center {
   margin: auto;
   width: 50%;
   padding: 10px;
 }
 .content {
-  width: 100%;
-  height: 100%;
+  @extend .size;
   float: right;
   text-align: center;
 }
@@ -17,24 +23,19 @@
   display: inline;
 }
 .fullcontainer {
-  width: 100%;
-  height: 100%;
+  @extend .size;
   position: fixed;
 }
 .viewOne{
- background-color: green;
- width: 100%;
- height: 100%;
+ background-color: $epicColor;
+ @extend .size;
 }
 .viewTwo{
- background-color: greenyellow;
- width: 100%;
- height: 100%;
-
+ background-color: $epicColorTwo;
+ @extend .size;
 }
 .home{
-  width: 100%;
-  height: 100%;
+  @extend .size;
   font-size: 24px;
   font-weight: 600;
 }
